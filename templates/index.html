@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h1>Diabetes Prediction</h1>
+
+    <form method = "post" action="/result">
+
+        <label>Pregnancies</label><br>
+        <input type="text" name="preg"><br><br>
+
+        <label>Glucose</label><br>
+        <input type="text" name="glu"><br><br>
+
+        <label>Skin Thickness</label><br>
+        <input type="text" name="sk"><br><br>
+
+        <label>Insulin</label><br>
+        <input type="text" name="in"><br><br>
+
+        <label>BMI</label><br>
+        <input type="text" name="bmi"><br><br>
+
+        <label>Diabetes Pedigree Function</label><br>
+        <input type="text" name="dpf"><br><br>
+
+        <label>Age</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Blood Pressure</label><br>
+        <input type="text" name="bp"><br><br>
+
+        <input type='submit' value='Predict'><br><br>
+
+        {%if result %}
+            <p>{{result}}</p>
+        {% endif %}
+
+    </form>
+    
+</body>
+</html>
