@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+</head>
+<body>
+    <section>
+        <div class="topic">
+            <center><b>DIABECTIC'S PREDICTION</b></center>
+        </div>
+    <div class="main">
+        <div class="input">
+            <h2><u>Prediction Input's Index</u></h2>
+            <center>
+            <form action="/result" method="post">
+                <label>Pregnancies : </label>
+                <input type="text" name="preg" id="name"></b>
+                <br><br>
+                <label>Glucose : </label>
+                <input type="text" name="glu" id="name"></b>
+                <br><br>
+                <label>Blood Pressure : </label>
+                <input type="text" name="bp" id="name"></b>
+                <br><br>
+                <label>Skin Thickness : </label>
+                <input type="text" name="sk" id="name"></b>
+                <br><br>
+                <label>Insulin : </label>
+                <input type="text" name="in" id="name"></b>
+                <br><br>
+                <label>BMI : </label>
+                <input type="text" name="bmi" id="name"></b>
+                <br><br>
+                <label>Diabetes Pedigree Function : </label>
+                <input type="text" name="dpf" id="name"></b>
+                <br><br>
+                <label>Age : </label>
+                <input type="text" name="age" id="name"></b>
+                <br><br><br>
+                <input type="submit" value="PREDICT" id="submit"><br><br>
+
+                {% if result %}
+                    <p>{{result}}</p>
+                {% endif %}
+            </form>
+            </center>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
