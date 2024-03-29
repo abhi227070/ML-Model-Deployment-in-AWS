@@ -91,3 +91,11 @@ def predict():
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
 ```
+
+## Acknowledgements
+
+This project utilizes Flask for building the user interface and AWS for deployment infrastructure. It follows MLOps principles for model deployment and management.
+
+## License
+
+This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
