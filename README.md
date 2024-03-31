@@ -1,4 +1,4 @@
-# Diabetes Prediction Deployment in AWS
+# ML Model Deployment in AWS
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
